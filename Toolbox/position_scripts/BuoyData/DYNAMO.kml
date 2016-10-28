@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<NetworkLink>
+	<name>DYNAMO BUOY POSITIONS</name>
+	<open>1</open>
+	<description></description>
+	<Url>
+		<href>http://137.110.149.123/~opgadmin/DYNAMO2011/DYNAMO2011.kml</href>
+		<refreshMode>onInterval</refreshMode>
+		<refreshInterval>30</refreshInterval>
+	</Url>
+</NetworkLink>
+</kml>

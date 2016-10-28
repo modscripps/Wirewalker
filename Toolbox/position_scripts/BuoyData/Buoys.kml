@@ -1,0 +1,927 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  	<Document>
+    	<name>Positions of Wirewalker Buoys</name>
+    	<open>1</open>
+    	<description>GPS location of wirewalker buoys provided by Pacify Gyre.</description>
+
+
+<!-- BEGIN STYLE: Buoy 01 -->
+    	<Style id="Buoy01_normal">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>2.5</scale>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/markers/buoy02_radio.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+		
+		<Style id="Buoy01_highlight">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>2.5</scale>
+         		<color>ffa0a0f0</color>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/markers/buoy02_radio.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+    	
+    	<StyleMap id="Buoy01">
+          <Pair>
+            <key>normal</key>
+            <styleUrl>#Buoy01_normal</styleUrl>
+          </Pair>
+          <Pair>
+            <key>highlight</key>
+            <styleUrl>#Buoy01_highlight</styleUrl>
+          </Pair>
+        </StyleMap>
+        
+        <Style id="Buoy01_old_normal">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+          	<scale>.4</scale>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/markers/buoy02_old.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+		
+		<Style id="Buoy01_old_highlight">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>.4</scale>
+         		<color>ffa0a0f0</color>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/markers/buoy02_old.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+    	
+    	<StyleMap id="Buoy01_old">
+          <Pair>
+            <key>normal</key>
+            <styleUrl>#Buoy01_old_normal</styleUrl>
+          </Pair>
+          <Pair>
+            <key>highlight</key>
+            <styleUrl>#Buoy01_old_highlight</styleUrl>
+          </Pair>
+        </StyleMap>
+<!-- END STYLE Buoy 01 -->
+ 
+    	
+<!-- BEGIN STYLE simple balloon -->
+		<Style id="SimpleBalloon">
+      		<BalloonStyle>
+        		<text><![CDATA[
+          			<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+    	</Style>
+<!-- END STYLE simple balloon -->
+
+<!-- BEGIN POSITION_NEWEST  -->
+      		<Placemark>
+        		<name>(02) GPS 01 - IMEI: 300034013750350</name>
+        		<visibility>1</visibility>
+      			<LookAt>
+    				<longitude>-117.30602900</longitude>
+    				<latitude>33.20434800</latitude>
+    				<heading>0.0</heading>
+    				<tilt>0.0</tilt>
+    				<range>2000</range>
+    				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+  				</LookAt>
+        		<description>
+        			<![CDATA[
+        				<p style="font-size:12pt;"><b>Latest position:</b> 33.204°N,117.306°W</p>
+        				<p style="font-size:12pt;"><b>Last updated:</b> 2011/20/09 16:40:00</p>
+        				<p style="font-size:12pt;"><b>Details:</b></p>
+						<div align="left" style="font-size:12pt;"><img width="660" height="521" style="border:0px; padding:10px; margin:10px;" src="http://santvn.ucsd.edu/DYNAMO2011/images/Buoy_configs/Buoy02.jpg" title="Buoy02 configuration"><table border=0 cellpadding=5 cellspacing=0 style="border:0px;padding:20px;">
+<tr><td align="left" valign="bottom" style="font-size:12pt;"><b>Buoy ID</b></td><td align="left" valign="bottom" style="font-size:12pt;">02</td></tr>
+<tr><td align="left" valign="bottom" style="font-size:12pt;"><b>Buoy Type</b></td><td align="left" valign="bottom" style="font-size:12pt;">Macro-Wirewalker</td></tr>
+
+
+
+
+<tr><td align="left" valign="bottom" style="font-size:12pt;"><b>Time Configured</b></td><td align="left" valign="bottom" style="font-size:12pt;">16 Dec 2011 19h40</td></tr>
+<tr><td align="left" valign="bottom" style="font-size:12pt;"><b>Pacific Gyre GPS IMEI</b></td><td align="left" valign="bottom" style="font-size:12pt;">300034013750350</td></tr>
+<tr><td align="left" valign="bottom" style="font-size:12pt;"><b>Novatech Beacon Serial #</b></td><td align="left" valign="bottom" style="font-size:12pt;">V10-080</td></tr>
+<tr><td align="left" valign="bottom" style="font-size:12pt;"><b>Novatech Beacon Frequency (MHz)</b></td><td align="left" valign="bottom" style="font-size:12pt;">160.785</td></tr>
+</table>
+<a href="http://santvn.ucsd.edu/DYNAMO2011/?ww=1" target="_new">Realtime data</a></div>
+        			]]>
+        		</description>
+        		<styleUrl>#Buoy01</styleUrl>
+        		<Point>
+          			<altitudeMode>relativeToGround</altitudeMode>
+          			<extrude>1</extrude>
+          			<coordinates>-117.30602900,33.20434800,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END POSITION_NEWEST  -->
+<!-- BEGIN FOLDER  -->
+		<Folder>
+      		<name>(02) GPS 01 - 300034013750350</name>
+      		<visibility>0</visibility>
+      		<LookAt>
+    			<longitude>-117.30602900</longitude>
+    			<latitude>33.20434800</latitude>
+    			<altitude>0</altitude>
+    			<heading>0.0</heading>
+    			<tilt>0.0</tilt>
+    			<range>2000</range>
+    			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+  			</LookAt>
+      		<description><![CDATA[Latest position: 33.204°N,117.306°W<br>Last updated: 2011/20/09 16:40:00]]></description>
+<!-- BEGIN POSITION_NEWEST  -->
+      		<Placemark>
+        		<name>(02) GPS 01 - IMEI: 300034013750350</name>
+        		<visibility>0</visibility>
+      			<LookAt>
+    				<longitude>-117.30602900</longitude>
+    				<latitude>33.20434800</latitude>
+    				<heading>0.0</heading>
+    				<tilt>0.0</tilt>
+    				<range>2000</range>
+    				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+  				</LookAt>
+        		<description>
+        			<![CDATA[
+        				<p style="font-size:12pt;"><b>Latest position:</b> 33.204°N,117.306°W</p>
+        				<p style="font-size:12pt;"><b>Last updated:</b> 2011/20/09 16:40:00</p>
+        				<p style="font-size:12pt;"><b>Details:</b></p>
+						<div align="left" style="font-size:12pt;"><img width="660" height="521" style="border:0px; padding:10px; margin:10px;" src="http://santvn.ucsd.edu/DYNAMO2011/images/Buoy_configs/Buoy02.jpg" title="Buoy02 configuration"><table border=0 cellpadding=5 cellspacing=0 style="border:0px;padding:20px;">
+<tr><td align="left" valign="bottom" style="font-size:12pt;"><b>Buoy ID</b></td><td align="left" valign="bottom" style="font-size:12pt;">02</td></tr>
+<tr><td align="left" valign="bottom" style="font-size:12pt;"><b>Buoy Type</b></td><td align="left" valign="bottom" style="font-size:12pt;">Macro-Wirewalker</td></tr>
+
+
+
+
+<tr><td align="left" valign="bottom" style="font-size:12pt;"><b>Time Configured</b></td><td align="left" valign="bottom" style="font-size:12pt;">16 Dec 2011 19h40</td></tr>
+<tr><td align="left" valign="bottom" style="font-size:12pt;"><b>Pacific Gyre GPS IMEI</b></td><td align="left" valign="bottom" style="font-size:12pt;">300034013750350</td></tr>
+<tr><td align="left" valign="bottom" style="font-size:12pt;"><b>Novatech Beacon Serial #</b></td><td align="left" valign="bottom" style="font-size:12pt;">V10-080</td></tr>
+<tr><td align="left" valign="bottom" style="font-size:12pt;"><b>Novatech Beacon Frequency (MHz)</b></td><td align="left" valign="bottom" style="font-size:12pt;">160.785</td></tr>
+</table>
+<a href="http://santvn.ucsd.edu/DYNAMO2011/?ww=1" target="_new">Realtime data</a></div>
+        			]]>
+        		</description>
+        		<styleUrl>#Buoy01</styleUrl>
+        		<Point>
+          			<altitudeMode>relativeToGround</altitudeMode>
+          			<extrude>1</extrude>
+          			<coordinates>-117.30602900,33.20434800,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END POSITION_NEWEST  --><!-- BEGIN OLD_FOLDER  -->
+		<Folder>
+      		<name>Old positions</name>
+      		<visibility>0</visibility>
+      		<LookAt>
+    			<longitude>-117.30602900</longitude>
+    			<latitude>33.20434800</latitude>
+    			<altitude>0</altitude>
+    			<heading>0.0</heading>
+    			<tilt>0.0</tilt>
+    			<range>2000</range>
+    			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+  			</LookAt>
+      		<description><![CDATA[Latest position: 33.204°N,117.306°W<br>Last updated: 2011/20/09 16:40:00]]></description>
+<!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 32.868°N,117.251°W<br>Recorded: 2011/10/14 01:00:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.25110400,32.86838900,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 32.868°N,117.251°W<br>Recorded: 2011/10/14 00:50:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.25114900,32.86847800,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 32.868°N,117.251°W<br>Recorded: 2011/10/14 00:40:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.25110100,32.86838100,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 32.868°N,117.251°W<br>Recorded: 2011/10/14 00:30:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.25114000,32.86837500,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 32.868°N,117.251°W<br>Recorded: 2011/10/14 00:20:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.25115100,32.86843100,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 32.868°N,117.251°W<br>Recorded: 2011/10/14 00:10:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.25110400,32.86832800,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 32.868°N,117.251°W<br>Recorded: 2011/10/14 00:00:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.25114000,32.86837800,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 32.868°N,117.251°W<br>Recorded: 2011/10/13 23:50:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.25110400,32.86835000,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 32.868°N,117.251°W<br>Recorded: 2011/10/13 23:40:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.25111800,32.86842000,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 32.868°N,117.251°W<br>Recorded: 2011/10/13 23:30:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.25110400,32.86838400,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 32.868°N,117.251°W<br>Recorded: 2011/10/13 23:20:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.25107100,32.86833600,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 32.868°N,117.251°W<br>Recorded: 2011/10/13 23:10:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.25114000,32.86838100,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 32.868°N,117.251°W<br>Recorded: 2011/10/13 23:00:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.25112400,32.86840300,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 32.868°N,117.251°W<br>Recorded: 2011/10/13 22:50:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.25114900,32.86832800,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 32.868°N,117.251°W<br>Recorded: 2011/10/13 22:40:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.25117900,32.86842800,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 32.868°N,117.251°W<br>Recorded: 2011/10/13 22:30:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.25111500,32.86837300,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 32.869°N,117.251°W<br>Recorded: 2011/10/13 22:20:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.25113700,32.86856100,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 32.868°N,117.251°W<br>Recorded: 2011/10/13 22:10:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.25113200,32.86841400,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 32.868°N,117.251°W<br>Recorded: 2011/10/13 22:00:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.25110400,32.86836100,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 32.868°N,117.251°W<br>Recorded: 2011/10/13 21:50:55]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.25125400,32.86826100,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 33.204°N,117.306°W<br>Recorded: 2011/09/20 22:50:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.30604000,33.20435300,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 33.204°N,117.306°W<br>Recorded: 2011/09/20 22:40:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.30604900,33.20436100,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 33.204°N,117.306°W<br>Recorded: 2011/09/20 22:30:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.30606200,33.20435600,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 33.204°N,117.306°W<br>Recorded: 2011/09/20 22:20:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.30606000,33.20436700,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 33.204°N,117.306°W<br>Recorded: 2011/09/20 22:10:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.30604900,33.20435600,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 33.204°N,117.306°W<br>Recorded: 2011/09/20 22:00:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.30604900,33.20435900,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 33.204°N,117.306°W<br>Recorded: 2011/09/20 21:50:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.30605700,33.20437000,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 33.204°N,117.306°W<br>Recorded: 2011/09/20 21:40:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.30605100,33.20435300,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 33.204°N,117.306°W<br>Recorded: 2011/09/20 21:30:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.30605700,33.20434800,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 33.204°N,117.306°W<br>Recorded: 2011/09/20 21:20:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.30603500,33.20435000,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 33.204°N,117.306°W<br>Recorded: 2011/09/20 21:10:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.30606200,33.20434800,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 33.204°N,117.306°W<br>Recorded: 2011/09/20 21:00:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.30605700,33.20436100,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 33.204°N,117.306°W<br>Recorded: 2011/09/20 20:50:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.30604300,33.20437000,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 33.204°N,117.306°W<br>Recorded: 2011/09/20 20:40:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.30607100,33.20436700,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 33.204°N,117.306°W<br>Recorded: 2011/09/20 20:30:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.30605100,33.20433900,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 33.204°N,117.306°W<br>Recorded: 2011/09/20 20:20:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.30606000,33.20435300,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 33.204°N,117.306°W<br>Recorded: 2011/09/20 20:10:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.30604000,33.20435000,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 33.204°N,117.306°W<br>Recorded: 2011/09/20 20:00:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.30604900,33.20433400,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 33.204°N,117.306°W<br>Recorded: 2011/09/20 19:50:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.30602900,33.20434200,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 33.204°N,117.306°W<br>Recorded: 2011/09/20 19:40:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.30601800,33.20435600,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 33.204°N,117.306°W<br>Recorded: 2011/09/20 19:30:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.30603500,33.20433400,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 33.204°N,117.306°W<br>Recorded: 2011/09/20 19:20:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.30604000,33.20434200,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 33.204°N,117.306°W<br>Recorded: 2011/09/20 19:10:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.30601200,33.20437000,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 33.204°N,117.306°W<br>Recorded: 2011/09/20 19:00:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.30602400,33.20435900,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 33.204°N,117.306°W<br>Recorded: 2011/09/20 18:50:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.30603200,33.20435000,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 33.204°N,117.306°W<br>Recorded: 2011/09/20 18:40:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.30604300,33.20434500,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 33.204°N,117.306°W<br>Recorded: 2011/09/20 18:30:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.30606200,33.20435900,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 33.204°N,117.306°W<br>Recorded: 2011/09/20 18:20:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.30605700,33.20436700,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 33.204°N,117.306°W<br>Recorded: 2011/09/20 18:10:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.30605400,33.20434200,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 33.204°N,117.306°W<br>Recorded: 2011/09/20 18:00:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.30605100,33.20433100,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 33.204°N,117.306°W<br>Recorded: 2011/09/20 17:50:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.30604300,33.20434500,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 33.204°N,117.306°W<br>Recorded: 2011/09/20 17:40:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.30604600,33.20436100,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 33.204°N,117.306°W<br>Recorded: 2011/09/20 17:30:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.30602600,33.20436400,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 33.204°N,117.306°W<br>Recorded: 2011/09/20 17:20:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.30604600,33.20435300,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 33.204°N,117.306°W<br>Recorded: 2011/09/20 17:10:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.30604300,33.20435300,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 33.204°N,117.306°W<br>Recorded: 2011/09/20 17:00:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.30605700,33.20434800,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 33.204°N,117.306°W<br>Recorded: 2011/09/20 16:50:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.30602900,33.20436400,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS --><!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- (02) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: 33.204°N,117.306°W<br>Recorded: 2011/09/20 16:40:00]]></description>
+        		<styleUrl>#Buoy01_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>-117.30602900,33.20434800,0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS -->
+		</Folder>
+<!-- END OLD_FOLDER  -->
+		</Folder>
+<!-- END FOLDER  -->
+
+	</Document>
+</kml>
+

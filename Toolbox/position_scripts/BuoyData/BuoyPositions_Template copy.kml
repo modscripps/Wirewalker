@@ -1,0 +1,1151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  	<Document>
+    	<name>Positions of Wirewalker Buoys</name>
+    	<open>1</open>
+    	<description>GPS location of wirewalker buoys provided by Pacify Gyre.</description>
+
+<!-- BEGIN STYLE: Buoy 01 -->
+    	<Style id="Buoy01_normal">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>2.5</scale>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/markers/buoy01.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+		
+		<Style id="Buoy01_highlight">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>2.5</scale>
+         		<color>ffa0a0f0</color>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/markers/buoy01.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+    	
+    	<StyleMap id="Buoy01">
+          <Pair>
+            <key>normal</key>
+            <styleUrl>#Buoy01_normal</styleUrl>
+          </Pair>
+          <Pair>
+            <key>highlight</key>
+            <styleUrl>#Buoy01_highlight</styleUrl>
+          </Pair>
+        </StyleMap>
+        
+        <Style id="Buoy01_old_normal">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+          	<scale>.4</scale>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/markers/buoy01_old.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+		
+		<Style id="Buoy01_old_highlight">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>.4</scale>
+         		<color>ffa0a0f0</color>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/markers/buoy01_old.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+    	
+    	<StyleMap id="Buoy01_old">
+          <Pair>
+            <key>normal</key>
+            <styleUrl>#Buoy01_old_normal</styleUrl>
+          </Pair>
+          <Pair>
+            <key>highlight</key>
+            <styleUrl>#Buoy01_old_highlight</styleUrl>
+          </Pair>
+        </StyleMap>
+<!-- END STYLE Buoy 01 -->
+
+<!-- BEGIN STYLE: Buoy 02 -->
+    	<Style id="Buoy02_normal">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>2.5</scale>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/markers/buoy02.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+		
+		<Style id="Buoy02_highlight">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>2.5</scale>
+         		<color>ffa0a0f0</color>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/markers/buoy02.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+    	
+    	<StyleMap id="Buoy02">
+          <Pair>
+            <key>normal</key>
+            <styleUrl>#Buoy02_normal</styleUrl>
+          </Pair>
+          <Pair>
+            <key>highlight</key>
+            <styleUrl>#Buoy02_highlight</styleUrl>
+          </Pair>
+        </StyleMap>
+        
+        <Style id="Buoy02_old_normal">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>.4</scale>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/buoy02_old.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+		
+		<Style id="Buoy02_old_highlight">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>.4</scale>
+         		<color>ffa0a0f0</color>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/buoy02_old.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+    	
+    	<StyleMap id="Buoy02_old">
+          <Pair>
+            <key>normal</key>
+            <styleUrl>#Buoy02_old_normal</styleUrl>
+          </Pair>
+          <Pair>
+            <key>highlight</key>
+            <styleUrl>#Buoy02_old_highlight</styleUrl>
+          </Pair>
+        </StyleMap>
+<!-- END STYLE Buoy 02 -->
+        
+<!-- BEGIN STYLE: Buoy 03 -->
+    	<Style id="Buoy03_normal">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>2.5</scale>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/markers/buoy03.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+		
+		<Style id="Buoy03_highlight">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>2.5</scale>
+         		<color>ffa0a0f0</color>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/markers/buoy03.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+    	
+    	<StyleMap id="Buoy03">
+          <Pair>
+            <key>normal</key>
+            <styleUrl>#Buoy03_normal</styleUrl>
+          </Pair>
+          <Pair>
+            <key>highlight</key>
+            <styleUrl>#Buoy03_highlight</styleUrl>
+          </Pair>
+        </StyleMap>
+        
+        <Style id="Buoy03_old_normal">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>.4</scale>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/markers/buoy03_old.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+		
+		<Style id="Buoy03_old_highlight">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>.4</scale>
+         		<color>ffa0a0f0</color>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/markers/buoy03_old.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+    	
+    	<StyleMap id="Buoy03_old">
+          <Pair>
+            <key>normal</key>
+            <styleUrl>#Buoy03_old_normal</styleUrl>
+          </Pair>
+          <Pair>
+            <key>highlight</key>
+            <styleUrl>#Buoy03_old_highlight</styleUrl>
+          </Pair>
+        </StyleMap>
+<!-- END STYLE Buoy 03 -->        
+    	
+<!-- BEGIN STYLE: Buoy 04 -->
+    	<Style id="Buoy04_normal">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>2.5</scale>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/markers/buoy04.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+		
+		<Style id="Buoy04_highlight">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>2.5</scale>
+         		<color>ffa0a0f0</color>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/markers/buoy04.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+    	
+    	<StyleMap id="Buoy04">
+          <Pair>
+            <key>normal</key>
+            <styleUrl>#Buoy04_normal</styleUrl>
+          </Pair>
+          <Pair>
+            <key>highlight</key>
+            <styleUrl>#Buoy04_highlight</styleUrl>
+          </Pair>
+        </StyleMap>
+        
+        <Style id="Buoy04_old_normal">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>.4</scale>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/markers/buoy04_old.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+		
+		<Style id="Buoy04_old_highlight">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>.4</scale>
+         		<color>ffa0a0f0</color>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/markers/buoy04_old.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+    	
+    	<StyleMap id="Buoy04_old">
+          <Pair>
+            <key>normal</key>
+            <styleUrl>#Buoy04_old_normal</styleUrl>
+          </Pair>
+          <Pair>
+            <key>highlight</key>
+            <styleUrl>#Buoy04_old_highlight</styleUrl>
+          </Pair>
+        </StyleMap>
+<!-- END STYLE Buoy 04 -->     	
+    	
+<!-- BEGIN STYLE: Buoy 05 -->
+    	<Style id="Buoy05_normal">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>2.5</scale>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/markers/buoy05.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+		
+		<Style id="Buoy05_highlight">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>2.5</scale>
+         		<color>ffa0a0f0</color>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/markers/buoy05.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+    	
+    	<StyleMap id="Buoy05">
+          <Pair>
+            <key>normal</key>
+            <styleUrl>#Buoy05_normal</styleUrl>
+          </Pair>
+          <Pair>
+            <key>highlight</key>
+            <styleUrl>#Buoy05_highlight</styleUrl>
+          </Pair>
+        </StyleMap>
+        
+        <Style id="Buoy05_old_normal">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>.4</scale>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/markers/buoy05_old.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+		
+		<Style id="Buoy05_old_highlight">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>.4</scale>
+         		<color>ffa0a0f0</color>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/markers/buoy05_old.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+    	
+    	<StyleMap id="Buoy05_old">
+          <Pair>
+            <key>normal</key>
+            <styleUrl>#Buoy05_old_normal</styleUrl>
+          </Pair>
+          <Pair>
+            <key>highlight</key>
+            <styleUrl>#Buoy05_old_highlight</styleUrl>
+          </Pair>
+        </StyleMap>
+<!-- END STYLE Buoy 05 -->    
+
+<!-- BEGIN STYLE: Buoy 06 -->
+    	<Style id="Buoy06_normal">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>2.5</scale>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/markers/buoy06.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+		
+		<Style id="Buoy06_highlight">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>2.5</scale>
+         		<color>ffa0a0f0</color>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/markers/buoy06.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+    	
+    	<StyleMap id="Buoy06">
+          <Pair>
+            <key>normal</key>
+            <styleUrl>#Buoy06_normal</styleUrl>
+          </Pair>
+          <Pair>
+            <key>highlight</key>
+            <styleUrl>#Buoy06_highlight</styleUrl>
+          </Pair>
+        </StyleMap>
+        
+        <Style id="Buoy06_old_normal">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>.4</scale>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/markers/buoy06_old.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+		
+		<Style id="Buoy06_old_highlight">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>.4</scale>
+         		<color>ffa0a0f0</color>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/markers/buoy06_old.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+    	
+    	<StyleMap id="Buoy06_old">
+          <Pair>
+            <key>normal</key>
+            <styleUrl>#Buoy06_old_normal</styleUrl>
+          </Pair>
+          <Pair>
+            <key>highlight</key>
+            <styleUrl>#Buoy06_old_highlight</styleUrl>
+          </Pair>
+        </StyleMap>
+<!-- END STYLE Buoy 06 -->  	
+
+<!-- BEGIN STYLE: Buoy 07 -->
+    	<Style id="Buoy07_normal">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>2.5</scale>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/markers/buoy07.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+		
+		<Style id="Buoy07_highlight">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>2.5</scale>
+         		<color>ffa0a0f0</color>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/markers/buoy07.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+    	
+    	<StyleMap id="Buoy07">
+          <Pair>
+            <key>normal</key>
+            <styleUrl>#Buoy07_normal</styleUrl>
+          </Pair>
+          <Pair>
+            <key>highlight</key>
+            <styleUrl>#Buoy07_highlight</styleUrl>
+          </Pair>
+        </StyleMap>
+        
+        <Style id="Buoy07_old_normal">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>.4</scale>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/markers/buoy07_old.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+		
+		<Style id="Buoy07_old_highlight">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>.4</scale>
+         		<color>ffa0a0f0</color>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/markers/buoy07_old.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+    	
+    	<StyleMap id="Buoy07_old">
+          <Pair>
+            <key>normal</key>
+            <styleUrl>#Buoy07_old_normal</styleUrl>
+          </Pair>
+          <Pair>
+            <key>highlight</key>
+            <styleUrl>#Buoy07_old_highlight</styleUrl>
+          </Pair>
+        </StyleMap>
+<!-- END STYLE Buoy 07 --> 
+
+<!-- BEGIN STYLE: Buoy 08 -->
+    	<Style id="Buoy08_normal">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>2.5</scale>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/markers/buoy08.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+		
+		<Style id="Buoy08_highlight">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>2.5</scale>
+         		<color>ffa0a0f0</color>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/markers/buoy08.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+    	
+    	<StyleMap id="Buoy08">
+          <Pair>
+            <key>normal</key>
+            <styleUrl>#Buoy08_normal</styleUrl>
+          </Pair>
+          <Pair>
+            <key>highlight</key>
+            <styleUrl>#Buoy08_highlight</styleUrl>
+          </Pair>
+        </StyleMap>
+        
+        <Style id="Buoy08_old_normal">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>.4</scale>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/markers/buoy08_old.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+		
+		<Style id="Buoy08_old_highlight">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>.4</scale>
+         		<color>ffa0a0f0</color>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/markers/buoy08_old.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+    	
+    	<StyleMap id="Buoy08_old">
+          <Pair>
+            <key>normal</key>
+            <styleUrl>#Buoy08_old_normal</styleUrl>
+          </Pair>
+          <Pair>
+            <key>highlight</key>
+            <styleUrl>#Buoy08_old_highlight</styleUrl>
+          </Pair>
+        </StyleMap>
+<!-- END STYLE Buoy 08 --> 
+
+<!-- BEGIN STYLE: Buoy 09 -->
+    	<Style id="Buoy09_normal">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>2.5</scale>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/markers/buoy09.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+		
+		<Style id="Buoy09_highlight">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>2.5</scale>
+         		<color>ffa0a0f0</color>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/markers/buoy09.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+    	
+    	<StyleMap id="Buoy09">
+          <Pair>
+            <key>normal</key>
+            <styleUrl>#Buoy09_normal</styleUrl>
+          </Pair>
+          <Pair>
+            <key>highlight</key>
+            <styleUrl>#Buoy09_highlight</styleUrl>
+          </Pair>
+        </StyleMap>
+        
+        <Style id="Buoy09_old_normal">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>.4</scale>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/buoy09_old.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+		
+		<Style id="Buoy09_old_highlight">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>.4</scale>
+         		<color>ffa0a0f0</color>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/buoy09_old.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+    	
+    	<StyleMap id="Buoy09_old">
+          <Pair>
+            <key>normal</key>
+            <styleUrl>#Buoy09_old_normal</styleUrl>
+          </Pair>
+          <Pair>
+            <key>highlight</key>
+            <styleUrl>#Buoy09_old_highlight</styleUrl>
+          </Pair>
+        </StyleMap>
+<!-- END STYLE Buoy 09 --> 
+
+<!-- BEGIN STYLE: Buoy 10 -->
+    	<Style id="Buoy10_normal">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/markers/buoy10.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+		
+		<Style id="Buoy10_highlight">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+         		<color>ffa0a0f0</color>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/markers/buoy10.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+    	
+    	<StyleMap id="Buoy10">
+          <Pair>
+            <key>normal</key>
+            <styleUrl>#Buoy10_normal</styleUrl>
+          </Pair>
+          <Pair>
+            <key>highlight</key>
+            <styleUrl>#Buoy10_highlight</styleUrl>
+          </Pair>
+        </StyleMap>
+        
+        <Style id="Buoy10_old_normal">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>.4</scale>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/buoy10_old.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+		
+		<Style id="Buoy10_old_highlight">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>.4</scale>
+         		<color>ffa0a0f0</color>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/buoy10_old.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+    	
+    	<StyleMap id="Buoy10_old">
+          <Pair>
+            <key>normal</key>
+            <styleUrl>#Buoy10_old_normal</styleUrl>
+          </Pair>
+          <Pair>
+            <key>highlight</key>
+            <styleUrl>#Buoy10_old_highlight</styleUrl>
+          </Pair>
+        </StyleMap>
+<!-- END STYLE Buoy 10 --> 
+
+<!-- BEGIN STYLE: Buoy 11 -->
+    	<Style id="Buoy11_normal">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/markers/buoy11.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+		
+		<Style id="Buoy11_highlight">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+         		<color>ffa0a0f0</color>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/markers/buoy11.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+    	
+    	<StyleMap id="Buoy11">
+          <Pair>
+            <key>normal</key>
+            <styleUrl>#Buoy11_normal</styleUrl>
+          </Pair>
+          <Pair>
+            <key>highlight</key>
+            <styleUrl>#Buoy11_highlight</styleUrl>
+          </Pair>
+        </StyleMap>
+        
+        <Style id="Buoy11_old_normal">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>.4</scale>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/buoy11_old.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+		
+		<Style id="Buoy11_old_highlight">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>.4</scale>
+         		<color>ffa0a0f0</color>
+         		<Icon>
+            		<href>http://santvn.ucsd.edu/DYNAMO2011/images/buoy11_old.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+    	
+    	<StyleMap id="Buoy11_old">
+          <Pair>
+            <key>normal</key>
+            <styleUrl>#Buoy11_old_normal</styleUrl>
+          </Pair>
+          <Pair>
+            <key>highlight</key>
+            <styleUrl>#Buoy11_old_highlight</styleUrl>
+          </Pair>
+        </StyleMap>
+<!-- END STYLE Buoy 11 --> 
+    	
+<!-- BEGIN STYLE simple balloon -->
+		<Style id="SimpleBalloon">
+      		<BalloonStyle>
+        		<text><![CDATA[
+          			<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+    	</Style>
+<!-- END STYLE simple balloon -->
+
+{BUOY_FOLDERS}
+
+	</Document>
+</kml>
+
+%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%
+<!-- BEGIN FOLDER  -->
+		<Folder>
+      		<name>{BUOY_NAME} ({BUOY_NUM})</name>
+      		<visibility>0</visibility>
+      		<LookAt>
+    			<longitude>{BUOY_LASTLON}</longitude>
+    			<latitude>{BUOY_LASTLAT}</latitude>
+    			<altitude>0</altitude>
+    			<heading>0.0</heading>
+    			<tilt>0.0</tilt>
+    			<range>2000</range>
+    			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+  			</LookAt>
+      		<description><![CDATA[Latest position: {BUOY_LASTPOS}<br>Last updated: {BUOY_LASTTIME}]]></description>
+{BUOY_FOLDER_CONT}
+		</Folder>
+<!-- END FOLDER  -->
+
+%%%%%%%%%%%%%%%%%%%%
+<!-- BEGIN POSITION_NEWEST  -->
+      		<Placemark>
+        		<name>{BUOY_NAME} ({BUOY_NUM})</name>
+        		<visibility>1</visibility>
+      			<LookAt>
+    				<longitude>{BUOY_LASTLON}</longitude>
+    				<latitude>{BUOY_LASTLAT}</latitude>
+    				<heading>0.0</heading>
+    				<tilt>0.0</tilt>
+    				<range>2000</range>
+    				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+  				</LookAt>
+        		<description>
+        			<![CDATA[
+        				<ul style="list-style-type:none; padding:0px;">
+  							<li>Latest position: 
+  								<ul style="list-style-type:none;">
+  									<li>{BUOY_LASTPOS}</li>
+    							</ul>
+  							</li>
+							<li>Last updated:
+    							<ul style="list-style-type:none;">
+									<li>{BUOY_LASTTIME}</li>
+								</ul>
+							</li>
+							<li>Details:
+								<ul style="list-style-type:none;">
+									<li>{BUOY_DETAILS}</li>
+								</ul>
+							</li>
+						</ul>
+        			]]>
+        		</description>
+        		<styleUrl>#Buoy{BUOY_NUM}</styleUrl>
+        		<Point>
+          			<altitudeMode>relativeToGround</altitudeMode>
+          			<extrude>1</extrude>
+          			<coordinates>{BUOY_LASTLON},{BUOY_LASTLAT},0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END POSITION_NEWEST  -->
+
+%%%%%%%%%%%%%%%%%%%%%
+<!-- BEGIN OLD_FOLDER  -->
+		<Folder>
+      		<name>Old positions</name>
+      		<visibility>0</visibility>
+      		<LookAt>
+    			<longitude>{BUOY_LASTLON}</longitude>
+    			<latitude>{BUOY_LASTLAT}</latitude>
+    			<altitude>0</altitude>
+    			<heading>0.0</heading>
+    			<tilt>0.0</tilt>
+    			<range>2000</range>
+    			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+  			</LookAt>
+      		<description><![CDATA[Latest position: {BUOY_LASTPOS}<br>Last updated: {BUOY_LASTTIME}]]></description>
+{BUOY_OLD_FOLDER_CONT}
+		</Folder>
+<!-- END OLD_FOLDER  -->
+%%%%%%%%%%%%%%%%%%%%%
+
+<!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name>{BUOY_NAME} ({BUOY_NUM})</name>
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: {BUOY_POS}<br>Recorded: {BUOY_TIME}]]></description>
+        		<styleUrl>#Buoy{BUOY_NUM}_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>{BUOY_LON},{BUOY_LAT},0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS -->

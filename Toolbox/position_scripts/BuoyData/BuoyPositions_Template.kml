@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  	<Document>
+    	<name>Positions of Wirewalker Buoys</name>
+    	<open>1</open>
+    	<description>GPS location of wirewalker buoys provided by Pacify Gyre.</description>
+
+{BUOY_STYLES} 
+    	
+<!-- BEGIN STYLE simple balloon -->
+		<Style id="SimpleBalloon">
+      		<BalloonStyle>
+        		<text><![CDATA[
+          			<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+    	</Style>
+<!-- END STYLE simple balloon -->
+
+{BUOY_FOLDERS}
+
+	</Document>
+</kml>
+
+%%%%%%%%%%%%%%%%%%%%%
+<!-- BEGIN STYLE: Buoy {BUOY_COUNT} -->
+    	<Style id="Buoy{BUOY_COUNT}_normal">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>2.5</scale>
+         		<Icon>
+            		<href>http://137.110.149.123/~opgadmin/DYNAMO2011/images/markers/buoy{BUOY_NUM}{BUOY_TYPE}.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+		
+		<Style id="Buoy{BUOY_COUNT}_highlight">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>2.5</scale>
+         		<color>ffa0a0f0</color>
+         		<Icon>
+            		<href>http://137.110.149.123/~opgadmin/DYNAMO2011/images/markers/buoy{BUOY_NUM}{BUOY_TYPE}.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+    	
+    	<StyleMap id="Buoy{BUOY_COUNT}">
+          <Pair>
+            <key>normal</key>
+            <styleUrl>#Buoy{BUOY_COUNT}_normal</styleUrl>
+          </Pair>
+          <Pair>
+            <key>highlight</key>
+            <styleUrl>#Buoy{BUOY_COUNT}_highlight</styleUrl>
+          </Pair>
+        </StyleMap>
+        
+        <Style id="Buoy{BUOY_COUNT}_old_normal">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+          	<scale>.4</scale>
+         		<Icon>
+            		<href>http://137.110.149.123/~opgadmin/DYNAMO2011/images/markers/buoy{BUOY_NUM}_old.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+		
+		<Style id="Buoy{BUOY_COUNT}_old_highlight">
+			<BalloonStyle>
+        		<text>
+        			<![CDATA[
+          				<h2>$[name]</h2>
+          				$[description]
+        			]]>
+        		</text>
+      		</BalloonStyle>
+      		<IconStyle>
+      			<scale>.4</scale>
+         		<color>ffa0a0f0</color>
+         		<Icon>
+            		<href>http://137.110.149.123/~opgadmin/DYNAMO2011/images/markers/buoy{BUOY_NUM}_old.png</href>
+         		</Icon>
+      		</IconStyle>
+		</Style>
+    	
+    	<StyleMap id="Buoy{BUOY_COUNT}_old">
+          <Pair>
+            <key>normal</key>
+            <styleUrl>#Buoy{BUOY_COUNT}_old_normal</styleUrl>
+          </Pair>
+          <Pair>
+            <key>highlight</key>
+            <styleUrl>#Buoy{BUOY_COUNT}_old_highlight</styleUrl>
+          </Pair>
+        </StyleMap>
+<!-- END STYLE Buoy {BUOY_COUNT} -->
+%%%%%%%%%%%%%%%%%%%%%
+<!-- BEGIN FOLDER  -->
+		<Folder>
+      		<name>({BUOY_NUM}) {BUOY_NAME} - {BUOY_IMEI}</name>
+      		<visibility>0</visibility>
+      		<LookAt>
+    			<longitude>{BUOY_LASTLON}</longitude>
+    			<latitude>{BUOY_LASTLAT}</latitude>
+    			<altitude>0</altitude>
+    			<heading>0.0</heading>
+    			<tilt>0.0</tilt>
+    			<range>2000</range>
+    			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+  			</LookAt>
+      		<description><![CDATA[Latest position: {BUOY_LASTPOS}<br>Last updated: {BUOY_LASTTIME}]]></description>
+{BUOY_FOLDER_CONT}
+		</Folder>
+<!-- END FOLDER  -->
+
+%%%%%%%%%%%%%%%%%%%%
+<!-- BEGIN POSITION_NEWEST  -->
+      		<Placemark>
+        		<name>({BUOY_NUM}) {BUOY_NAME} - IMEI: {BUOY_IMEI}</name>
+        		<visibility>1</visibility>
+      			<LookAt>
+    				<longitude>{BUOY_LASTLON}</longitude>
+    				<latitude>{BUOY_LASTLAT}</latitude>
+    				<heading>0.0</heading>
+    				<tilt>0.0</tilt>
+    				<range>2000</range>
+    				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+  				</LookAt>
+        		<description>
+        			<![CDATA[
+        				<p style="font-size:12pt;"><b>Latest position:</b> {BUOY_LASTPOS}</p>
+        				<p style="font-size:12pt;"><b>Last updated:</b> {BUOY_LASTTIME}</p>
+        				<p style="font-size:12pt;"><b>Details:</b></p>
+						{BUOY_DETAILS}
+        			]]>
+        		</description>
+        		<styleUrl>#Buoy{BUOY_COUNT}</styleUrl>
+        		<Point>
+          			<altitudeMode>relativeToGround</altitudeMode>
+          			<extrude>1</extrude>
+          			<coordinates>{BUOY_LASTLON},{BUOY_LASTLAT},0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END POSITION_NEWEST  -->
+
+%%%%%%%%%%%%%%%%%%%%%
+<!-- BEGIN OLD_FOLDER  -->
+		<Folder>
+      		<name>Old positions</name>
+      		<visibility>0</visibility>
+      		<LookAt>
+    			<longitude>{BUOY_LASTLON}</longitude>
+    			<latitude>{BUOY_LASTLAT}</latitude>
+    			<altitude>0</altitude>
+    			<heading>0.0</heading>
+    			<tilt>0.0</tilt>
+    			<range>2000</range>
+    			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+  			</LookAt>
+      		<description><![CDATA[Latest position: {BUOY_LASTPOS}<br>Last updated: {BUOY_LASTTIME}]]></description>
+{BUOY_OLD_FOLDER_CONT}
+		</Folder>
+<!-- END OLD_FOLDER  -->
+%%%%%%%%%%%%%%%%%%%%%
+
+<!-- BEGIN OLD POSITIONS -->
+      		<Placemark>
+        		<name></name><!-- ({BUOY_NUM}) -->
+        		<visibility>0</visibility>
+        		<description><![CDATA[Position: {BUOY_POS}<br>Recorded: {BUOY_TIME}]]></description>
+        		<styleUrl>#Buoy{BUOY_COUNT}_old</styleUrl>
+        		<Point>
+        			<altitudeMode>relativeToGround</altitudeMode>
+        			<extrude>1</extrude>
+          			<coordinates>{BUOY_LON},{BUOY_LAT},0</coordinates>
+        		</Point>
+      		</Placemark>
+<!-- END OLD POSITIONS -->
