@@ -12,21 +12,10 @@ else
     RSKdb=RSKopen(RSK);
     RSKread=RSKreaddata(RSKdb);
     % keyboard
-    
-    if strcmp(instr_type,'c')==1
+    if strcmp(instr_type,'quipp')==1
+        rsk_struct_raw=RSK_structQ(RSKread);
+    else    
         rsk_struct_raw=RSK_struct(RSKread);
-    elseif strcmp(instr_type,'c_DO')==1
-        rsk_struct_raw=RSK_structDO(RSKread);
-    elseif strcmp(instr_type,'m')==1
-        rsk_struct_raw=RSK_structM(RSKread);
-    elseif strcmp(instr_type,'c1')==1
-        rsk_struct_raw=RSK_structC1(RSKread);
-    elseif strcmp(instr_type,'tp')==1
-        rsk_struct_raw=RSK_structTP(RSKread);
-    elseif strcmp(instr_type,'c_4Hz')==1
-        rsk_struct_raw=RSK_struct(RSKread);
-    else
-        disp('need to pick c or m or c1 (c1 is simple CTD) or tp or c_4Hz');
     end
     
     % enable for WW, disable for bowchain
