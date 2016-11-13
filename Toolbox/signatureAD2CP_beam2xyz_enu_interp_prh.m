@@ -125,10 +125,12 @@ dt=round(1/nanmean(diff(tt))/86400);
 heading = Data.([dataModeWord  '_Heading']);
 pitch   = Data.([dataModeWord  '_Pitch']);
 roll    = Data.([dataModeWord  '_Roll']);
-tt1=tt(1+round(dt/2):dt:end);
-heading1=heading(1+round(dt/2):dt:end);
-pitch1=pitch(1+round(dt/2):dt:end);
-roll1=roll(1+round(dt/2) :dt:end);
+ind_begining=find(diff(roll(1:dt+1))~=0);
+tt1=tt(round(dt/2)+ind_begining:dt:end);
+heading1=heading(round(dt/2)+ind_begining:dt:end);
+pitch1=pitch(round(dt/2)+ind_begining:dt:end);
+roll1=roll(round(dt/2)+ind_begining:dt:end);
+
 headingi=interp1(tt1,heading1,tt);
 pitchi=interp1(tt1,pitch1,tt);
 rolli=interp1(tt1,roll1,tt);
@@ -140,7 +142,7 @@ datetick('x')
 legend('Original roll','interpolate roll')
 hold off
 print('interpolate_roll.png','-dpng')
-close 
+%close 
 
 %%%%
 Name = ['X','Y','Z'];

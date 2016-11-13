@@ -54,69 +54,12 @@ title('Verify rising/falling data separation');
 % title('Data from falling half cycles');
 
 if nargout==3
-    dataup.time=data.time(up);
-    dataup.P=data.P(up);
-    dataup.T=data.T(up);
-    if isfield(data,'C')==1
-        dataup.C=data.C(up);
+    fields=fieldnames(data);
+    for f=1:length(fields)
+        wh_field=fields{f};
+        dataup.(wh_field)=data.(wh_field)(up,1);
     end
-    if isfield(data,'v1')==1
-        dataup.v1=data.v1(up);
-    end
-    if isfield(data,'v2')==1
-        dataup.v2=data.v2(up);
-    end
-    if isfield(data,'v3')==1
-        dataup.v3=data.v3(up);
-    end
-    if isfield(data,'v4')==1
-        dataup.v4=data.v4(up);
-    end
-    if isfield(data,'S')==1
-        dataup.S=data.S(up);
-    end
-    if isfield(data,'SA')==1
-        dataup.SA=data.SA(up);
-    end
-    if isfield(data,'CT')==1
-        dataup.CT=data.CT(up);
-    end
-    if isfield(data,'rho')==1
-        dataup.rho=data.rho(up);
-    end
-    if isfield(data,'dPdt')==1
-        dataup.dPdt=data.dPdt(up);
-    end
-    if isfield(data,'sigma')==1
-        dataup.sigma=data.sigma(up);
-    end
-    if isfield(data,'Tc')==1
-        dataup.Tc=data.Tc(up);
-    end
-    if isfield(data,'Cc')==1
-        dataup.Cc=data.Cc(up);
-    end
-    if isfield(data,'F_chla')==1
-        dataup.F_chla=data.F_chla(up);
-    end
-    if isfield(data,'F_CDOM')==1
-        dataup.F_CDOM=data.F_CDOM(up);
-    end
-    if isfield(data,'turb')==1
-        dataup.turb=data.turb(up);
-    end
-    if isfield(data,'S')==1
-        dataup.S=data.S(up);
-    end
-    if isfield(data,'O2_volt')==1
-        dataup.O2_volt=data.O2_volt(up);
-    end
-    if isfield(data,'DO')==1
-        dataup.DO=data.DO(up);
-    end
-    if isfield(data,'DO_percent')==1
-        dataup.DO_percent=data.DO_percent(up);
-    end
+
 end
 
 end

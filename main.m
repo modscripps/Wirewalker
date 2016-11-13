@@ -6,13 +6,19 @@
 % other looks like 
 % WW/name_of_the_wirewalker/aqd
 
-root='/Users/aleboyer/ARNAUD/SCRIPPS/WireWalker';
-root_script='~/Github/Wirewalker/';
+root_data='/Users/aleboyer/ARNAUD/SCRIPPS/WireWalker/';
+root_script='/Users/aleboyer/Desktop/Wirewalker-master/';
+Cruise_name='quipp'; % 
+WW_name='quipp'; % 
+deployement='d1';
 
+aqdpath=sprintf('%s/WW/%s/%s/aqd/',Cruise_name,WW_name,deployement);
+rbrpath=sprintf('%s/WW/%s/%s/rbr/',Cruise_name,WW_name,deployement);
+
+newname='tuto_aqd';
 
 % used in prelim_proc_aqdII_interp_prh;
-dirName=[root '/asiri3_ww/WW/ice_cube/d1/aqd/'];
-newname='icecube_d1_aqd'; % can be whatever you want
+% path to aquadopp data.
 
 % adding path 
 addpath([root_script 'Toolbox']);
@@ -23,7 +29,6 @@ addpath([root_script 'Toolbox/position_scripts']);
 
 
 % used in process_WW should be the name after the folder WW in dirName ;
-WW_name='ice_cube'; % 
 
 
 prelim_proc_aqdII_interp_prh;

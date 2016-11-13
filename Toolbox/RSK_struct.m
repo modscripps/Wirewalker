@@ -1,19 +1,21 @@
 function out=RSK_struct(in)
 %function out=RSK_struct(in)
 
-sensor={'Conductivity','Temperature','Pressure','Dissolved','Chlorophyll',...
-        'CDOM','Turbidity','Sea pressure','Depth','Salinity'};
-for c=1:length(in.channels)-1 % pb avec aquarius hope other cruise are fine
-    for s=1:length(sensor)
-        if strfind(in(s))
-
+i=0;
+for c=1:length(in.channels) % pb avec aquarius hope other cruise are fine
+    switch in.channels(c).longName
+        case 'Pressure'
+            out.P=in.data.values(:,c)-10.13;
+        case 'Temperature'
+            out.T=in.data.values(:,c);
+        case 'Conductivity'
+            out.C=in.data.values(:,c);
+        otherwise
+            i=i+1;
+            eval(sprintf('out.v%i=in.data.values(:,c)',i));
+    end
+end
 out.time=(in.data.tstamp);
-out.P=in.data.values(:,3)-10.13;
-out.C=in.data.values(:,1);
-out.T=in.data.values(:,2);
-out.v1=in.data.values(:,4);
-out.v2=in.data.values(:,5);
-
 out.P(out.P<0)=0;
 out.dPdt=onedgrad(out.P,1/6);
 out.S=gsw_SP_from_C(out.C,out.T,out.P);
