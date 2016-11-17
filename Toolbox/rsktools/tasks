@@ -1,0 +1,5 @@
+add function for CT shift e.g. salcor | id:53bac432018c2dd769c8c02f87f92276ce7de01b
+add RSKdetectcasts and use to populate profiles metadata | id:86986b316578092e391444fe17373db8573bdd7b
+need to read atmospheric pressure (and other params) from rsk | id:ad55374ecdfde8a361df8e686a7799c09d4a73bd
+remove atmospheric pressure from rsk using other series | id:b5be0b1aea20245491fe26f2f19cc6fa87b35e22
+make RSKplotTS using gsw_SA_CT_plot | id:c3e14b015d896eafc5d3f0c75f1d0a86f756cace

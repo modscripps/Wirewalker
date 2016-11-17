@@ -1,0 +1,5 @@
+write up a manual with examples and plots | id:13779bd79588b289d31c601208352534070255a8
+new text export read utility | id:5756b3afd6401fc0bf661a8d8cb0bb98af4407f2
+get easyParse working properly | id:d487f3f1288c4ed759c396476731b1a2d698646a
+add salinity to ctd objects using teos | id:d7138365570cc31466a6dca3cdad6eed1b6cb5b2
+clean up colors etc for profile plots | id:e67e6768fb80e1d4f9a448a25d293e1113237355
