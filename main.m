@@ -15,14 +15,15 @@ deployement='d1';
 aqdpath=sprintf('%s/WW/%s/%s/aqd/',Cruise_name,WW_name,deployement);
 rbrpath=sprintf('%s/WW/%s/%s/rbr/',Cruise_name,WW_name,deployement);
 
-newname='tuto_aqd';
+name='quipp';
 
 % used in prelim_proc_aqdII_interp_prh;
 % path to aquadopp data.
 
 % adding path 
 addpath([root_script 'Toolbox']);
-addpath([root_script 'Toolbox/mksqlite-1.12-src']);
+addpath([root_script 'Toolbox/rsktools']);
+addpath([root_script 'Toolbox/rsktools/mksqlite-1.12-src']);
 addpath([root_script 'Toolbox/gsw_matlab_v3_02']);
 addpath([root_script 'Toolbox/gsw_matlab_v3_02/library']);
 addpath([root_script 'Toolbox/position_scripts']);

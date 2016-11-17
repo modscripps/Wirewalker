@@ -1,29 +1,26 @@
 % prelim processing of the AQDII data from eazy-e
+name_aqd=[name '_aqd'];
 
 %load and transform aqdII data
 eval(sprintf('cd %s%s',root_data,aqdpath))
 disp(pwd)
 f=dir('*ad2cp*.mat');
-fprintf('be carefull at the order of file in dir(%s*ad2cp*.mat) \n',dirName)
+fprintf('be carefull at the order of file in dir(%s*ad2cp*.mat) \n',aqdpath)
 beg=zeros(1,length(f));
+cell_Data=struct([]);
 for l=1:length(f)
   load([aqdpath f(l).name])
   beg(l)=Data.Burst_MatlabTimeStamp(1);
+  cell_Data{l}=Data;
 end
 [beg,I]=sort(beg);
-fbis=f(I);
 
-load([aqdpath fbis(1).name])
-[Data1,~,~]=signatureAD2CP_beam2xyz_enu_interp_prh(Data, Config,'burst');
-eval([newname '=Data1']);
-
-if length(fbis)>1
-    for ii=2:length(fbis)
-        load([aqdpath fbis(ii).name])
-        [temp,~,~]=signatureAD2CP_beam2xyz_enu_interp_prh(Data, Config,'burst');
-        eval([newname '=mergefields(' newname ',temp,1,1)']);
-    end
+[temp,~,~]=signatureAD2CP_beam2xyz_enu_interp_prh_invert_x(cell_Data{I(1)}, Config,'burst');
+eval([name_aqd '=temp;']);
+for i=2:length(I)
+[temp,~,~]=signatureAD2CP_beam2xyz_enu_interp_prh_invert_x(cell_Data{I(i)}, Config,'burst');
+        eval([name_aqd '=mergefields(' name_aqd ',temp,1,1);']);
 end
-save([newname '.mat'],newname, '-v7.3')
+save([name_aqd '_aqd.mat'],name_aqd, '-v7.3')
 
 cd(root_script) 

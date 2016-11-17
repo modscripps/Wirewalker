@@ -124,7 +124,7 @@ end
 aqd_name=[tok rem(2:end)];
 fprintf('Get into Aquadop %s-%s data \n',WW_name)
 % do not forget to run prelim_proc_aqdll_interp_pitch
-aqdfile=dir(fullfile(root_data,aqdpath,[newname '.mat']));
+aqdfile=dir(fullfile(root_data,aqdpath,[name_aqd '.mat']));
 load(fullfile(root_data,aqdpath,aqdfile.name));
 eval(['Data_aqd=' newname ';']);
 
@@ -140,10 +140,11 @@ plot(Data_aqd.Burst_MatlabTimeStamp,Data_aqd.Burst_Pressure,'b');hold on;
 plot(Data_aqd.Burst_MatlabTimeStamp,P_rbr_on_aqdtime,'r');hold on;
 print('up_down_P_aqd_nointerp.png','-dpng')
 xlim([Data_aqd.Burst_MatlabTimeStamp(fix(T/2))-2/1440,...
-    Data_aqd.Burst_MatlabTimeStamp(fix(T/2))+2/1440])
+    Data_aqd.Burst_MatlabTimeStamp(fix(T./2))+2/1440])
 title('Select precisely the red then blue crest','fontsize',25)
 [X,Y]=ginput(2);
 time_diff=diff(X);
+% ask if figure ok? 
 close
 
 
@@ -198,11 +199,11 @@ ctd.u_abs=ctd.aqd.u;
 
 WWrbr.std_profiles=ctd;
 
-eval([newname '=WWrbr;']);
-eval([newname '_raw=WWrbrraw;']);
+eval([name '=WWrbr;']);
+eval([name '_raw=WWrbrraw;']);
 
-save(sprintf('%s%s%s.mat',root_data,rbrpath,newname),newname)
-save(sprintf('%s%s%s_raw.mat',root_data,rbrpath,newname),[newname '_raw'])
+save(sprintf('%s%s%s.mat',root_data,rbrpath,name),name)
+save(sprintf('%s%s%s_raw.mat',root_data,rbrpath,name),[name '_raw'])
 
 
 
