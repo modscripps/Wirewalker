@@ -7,15 +7,16 @@
 % WW/name_of_the_wirewalker/aqd
 
 root_data='/Users/aleboyer/ARNAUD/SCRIPPS/WireWalker/';
-root_script='/Users/aleboyer/Desktop/Wirewalker-master/';
-Cruise_name='quipp'; % 
-WW_name='quipp'; % 
-deployement='d1';
+root_script='/Users/aleboyer/GitHub/Wirewalker/';
+Cruise_name='LAJIT'; % 
+WW_name='LAJIT'; % 
+deployement='d2';
 
 aqdpath=sprintf('%s/WW/%s/%s/aqd/',Cruise_name,WW_name,deployement);
 rbrpath=sprintf('%s/WW/%s/%s/rbr/',Cruise_name,WW_name,deployement);
 
-name='quipp';
+name='LAJIT';
+name_aqd=[name '_aqd_' deployement];
 
 % used in prelim_proc_aqdII_interp_prh;
 % path to aquadopp data.
@@ -34,5 +35,5 @@ addpath([root_script 'Toolbox/position_scripts']);
 
 prelim_proc_aqdII_interp_prh;
 process_WW;
-wavelet_filter_v3;
+%wavelet_filter_v3;
 

@@ -53,7 +53,7 @@ rhomax = round(nanmax(ctd.rho()));
 incr   = 0.2;
 
 %% add positions of WW_name
-if exist(fullfile(data_dir,'ww_pos_all.mat'),'file')
+if exist(fullfile(root_data,'ww_pos_all.mat'),'file')
     moored_WW=0;
     fprintf('Add %s trajectory\n',WW_name)
     load(fullfile(data_dir,'ww_pos_all.mat'))
@@ -126,7 +126,7 @@ fprintf('Get into Aquadop %s-%s data \n',WW_name)
 % do not forget to run prelim_proc_aqdll_interp_pitch
 aqdfile=dir(fullfile(root_data,aqdpath,[name_aqd '.mat']));
 load(fullfile(root_data,aqdpath,aqdfile.name));
-eval(['Data_aqd=' newname ';']);
+eval(['Data_aqd=' name_aqd ';']);
 
 
 %% dealing with time off set between rbr and aqd
@@ -138,9 +138,18 @@ P_rbr_on_aqdtime=interp1(WWrbr.time(~isnan(WWrbr.P)), ...
 close
 plot(Data_aqd.Burst_MatlabTimeStamp,Data_aqd.Burst_Pressure,'b');hold on;
 plot(Data_aqd.Burst_MatlabTimeStamp,P_rbr_on_aqdtime,'r');hold on;
+title('Watch out for aqd rbr difference')
+s=input('difference between aqd pressure and rbr pressure \n' ,'s');
+if str2double(s)~=0
+    close;
+    P_rbr_on_aqdtime=P_rbr_on_aqdtime+str2double(s);
+    plot(Data_aqd.Burst_MatlabTimeStamp,Data_aqd.Burst_Pressure,'b');hold on;
+    plot(Data_aqd.Burst_MatlabTimeStamp,P_rbr_on_aqdtime,'r');hold on;
+end
+
 print('up_down_P_aqd_nointerp.png','-dpng')
-xlim([Data_aqd.Burst_MatlabTimeStamp(fix(T/2))-2/1440,...
-    Data_aqd.Burst_MatlabTimeStamp(fix(T./2))+2/1440])
+xlim([Data_aqd.Burst_MatlabTimeStamp(fix(T/2))-40/1440,...
+    Data_aqd.Burst_MatlabTimeStamp(fix(T./2))+40/1440])
 title('Select precisely the red then blue crest','fontsize',25)
 [X,Y]=ginput(2);
 time_diff=diff(X);
@@ -151,11 +160,12 @@ close
 %%  Deal with strange MatlabTimeStamp
 disp('dealing with wrong MatlabTime step on aqd data')
 deltat       = diff(Data_aqd.Burst_MatlabTimeStamp);
-% find weird delta time sample, arbitrary criteria
-aqd_time_nok = find(deltat<6e-7|deltat>8e-7);
-% find longest period without problem
-aqd_time_ok  = find(diff(aqd_time_nok)==max(diff(aqd_time_nok)));
-aqd_time_ok  = aqd_time_nok(aqd_time_ok)+1:aqd_time_nok(aqd_time_ok+1)-1;
+%% find weird delta time sample, arbitrary criteria
+%aqd_time_nok = find(deltat<6e-7|deltat>8e-7);
+%% find longest period without problem
+%aqd_time_ok  = find(diff(aqd_time_nok)==max(diff(aqd_time_nok)));
+%aqd_time_ok  = aqd_time_nok(aqd_time_ok)+1:aqd_time_nok(aqd_time_ok+1)-1;
+aqd_time_ok  = 1:length(Data_aqd.Burst_MatlabTimeStamp);
 
 
 %% interp aqd data on rbr time
@@ -177,7 +187,7 @@ trim_correl=nanmean([Data_aqd.Burst_CorBeam1(aqd_time_ok),...
 
 %check here to make sure there isn't some horrible offset between aqdII
 %pressure and the CTD pressure.
-WWrbr.P_aqd=interp1(trim_t,P,WWrbr.time);
+WWrbr.P_aqd=interp1(trim_t,P-str2double(s),WWrbr.time);
 plot(WWrbr.time,WWrbr.P_aqd,'b');hold on;
 plot(WWrbr.time,WWrbr.P,'r');hold off;
 legend('AQD','RBR')

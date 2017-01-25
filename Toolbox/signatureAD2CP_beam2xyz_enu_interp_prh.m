@@ -126,6 +126,13 @@ heading = Data.([dataModeWord  '_Heading']);
 pitch   = Data.([dataModeWord  '_Pitch']);
 roll    = Data.([dataModeWord  '_Roll']);
 ind_begining=find(diff(roll(1:dt+1))~=0);
+if isempty(ind_begining)
+    if length(unique(roll))==1
+        disp('watch out for data roll is fixed')
+    else
+        ind_begining=dt/4;
+    end
+end
 tt1=tt(round(dt/2)+ind_begining:dt:end);
 heading1=heading(round(dt/2)+ind_begining:dt:end);
 pitch1=pitch(round(dt/2)+ind_begining:dt:end);

@@ -1,5 +1,4 @@
 % prelim processing of the AQDII data from eazy-e
-name_aqd=[name '_aqd'];
 
 %load and transform aqdII data
 eval(sprintf('cd %s%s',root_data,aqdpath))
@@ -15,12 +14,12 @@ for l=1:length(f)
 end
 [beg,I]=sort(beg);
 
-[temp,~,~]=signatureAD2CP_beam2xyz_enu_interp_prh_invert_x(cell_Data{I(1)}, Config,'burst');
+[temp,~,~]=signatureAD2CP_beam2xyz_enu_interp_prh(cell_Data{I(1)}, Config,'burst');
 eval([name_aqd '=temp;']);
 for i=2:length(I)
-[temp,~,~]=signatureAD2CP_beam2xyz_enu_interp_prh_invert_x(cell_Data{I(i)}, Config,'burst');
+[temp,~,~]=signatureAD2CP_beam2xyz_enu_interp_prh(cell_Data{I(i)}, Config,'burst');
         eval([name_aqd '=mergefields(' name_aqd ',temp,1,1);']);
 end
-save([name_aqd '_aqd.mat'],name_aqd, '-v7.3')
+save([name_aqd '.mat'],name_aqd, '-v7.3')
 
 cd(root_script) 
